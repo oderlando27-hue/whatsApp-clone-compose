@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-
+androidx.core.app.NotificationManagerCompat.from(this).cancelAll()
     setContent { WhatsAppCloneMain(appComposeNavigator) }
   }
 }
